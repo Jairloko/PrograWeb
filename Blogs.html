@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <title>Blog</title>
+    <title>Blogee</title>
 </head>
 <body>
     <div class="background">
-        <div class="cuadro">
-            <h1 class="slogan">Comparte en Blog</h1>
+        <div class="login_box">
+            <h1 class="slogan">Comparte en Blogee</h1>
             <form class="ingresar_datos">
-                <input type="text" name="usuario" id="usuario" class="login" placeholder="Usuario" required>
-                <input type="password" name="contra" id="contra" class="login" placeholder="Contraseña" required>
-                <input type="submit" class="btn_registrar" value="Registrar">
+                <label for="usuario">Usuario</label>
+                <input type="text" class="login" placeholder="Usuario" required>
+
+                <label for="contra">Contraseña</label>
+                <input type="password" class="login"  placeholder="Contraseña" required>
+
+                <input type="submit" class="btn_login" value="Log In">
+                <div class="registrar">
+                    <a href="#">No tienes una cuenta?</a>
+                </div>
             </form>
-            <div class="registrar">
-                <p class="txt_registro">No tienes cuenta? <a href="#">Registrate</a></p>
-            </div>
         </div>
     </div>
 </body>
