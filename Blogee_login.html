@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./Styles/Style_login.css">
+    <link rel="shortcut icon" href="./Img/Logo_PW1.ico">
     <title>Blogee</title>
 </head>
 <body>
     <div class="background">
         <div class="login_box">
+            <img class="logo" src="./Img/Logo_PW1.jpg" alt="Logo de Blogee">
             <h1 class="slogan">Comparte en Blogee</h1>
-            <form class="ingresar_datos">
+            <form class="ingresar_datos" id="formL">
                 <label for="usuario">Usuario</label>
-                <input type="text" class="login" placeholder="Usuario" required>
+                <input type="text" class="login" placeholder="Usuario" name="usuario" id="usuario" required>
 
                 <label for="contra">Contraseña</label>
-                <input type="password" class="login"  placeholder="Contraseña" required>
+                <input type="password" class="login"  placeholder="Contraseña" name="contraseña" id="contraseña" required>
 
                 <input type="submit" class="btn_login" value="Log In">
                 <div class="registrar">
-                    <a href="#">No tienes una cuenta?</a>
+                    <a href="Blogee_registro.html">No tienes una cuenta?</a>
                 </div>
             </form>
         </div>
     </div>
+    <script src="./Js/Js_login.js"></script>
 </body>
 </html>
